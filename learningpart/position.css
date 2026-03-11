@@ -1,0 +1,64 @@
+/* position static */
+
+/* .box{
+width:200px;
+height:100px;
+background-color:red;
+position:static;
+top:50px;
+} */
+
+
+/* position relative */
+/* body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    position: static;
+    background-color: red;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: #00ff00;
+    position: relative;
+    top:10px;
+    left :40px;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+} */
+ .container{
+  width:300px;
+  height:150px;
+  border:2px solid black;
+  margin-bottom:40px;
+  position:relative;
+}
+
+.box{
+  width:100px;
+  height:100px;
+  background:red;
+  color:white;
+}
+
+/* original box */
+.original{
+  position:static;
+}
+
+/* moved box */
+.relative{
+  position:relative;
+  top:30px;
+  left:40px;
+  background:blue;
+}

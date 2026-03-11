@@ -1,0 +1,287 @@
+/* css practice notes */
+
+/* css ka full form cascading style sheets hota hai */
+/* css ka use html page ko style dene ke liye hota hai */
+/* jaise color, font size, spacing, layout etc */
+
+h1{
+color:red;
+font-size:40px;
+}
+
+/* html vs css */
+
+/* html page ka structure banata hai */
+/* css usko design karta hai */
+
+p{
+color:blue;
+}
+
+/* css ko html me 3 tarike se use kar sakte hai */
+
+/* 1 inline css */
+/* <h1 style="color:red">hello</h1> */
+
+/* 2 internal css */
+/*
+
+<style>
+h1{
+color:red;
+}
+</style>
+
+*/
+
+/* 3 external css */
+/* alag css file banake html me link karte hai */
+
+/* css syntax */
+
+/* basic syntax */
+
+p{
+color:green;
+font-size:20px;
+}
+
+/* yaha p selector hai */
+/* color property hai */
+/* green value hai */
+
+/* css selectors */
+
+/* universal selector */
+/* * ka use karke sab elements select kar sakte hai */
+
+*{
+margin:0;
+padding:0;
+}
+
+/* tag selector */
+/* html tag ko direct select karte hai */
+
+p{
+color:purple;
+}
+
+/* class selector */
+/* class ko . se select karte hai */
+/* ek class multiple elements par use ho sakti hai */
+
+.box{
+background:yellow;
+}
+
+/* id selector */
+/* id ko # se select karte hai */
+/* id unique hoti hai */
+
+#title{
+color:black;
+}
+
+/* group selector */
+/* ek se zyada selectors ko ek sath style dene ke liye */
+
+h1, p{
+color:orange;
+}
+
+/* css colors */
+
+/* color name */
+
+h2{
+color:red;
+}
+
+/* hex color */
+
+h3{
+color:#ff0000;
+}
+
+/* rgb color */
+/* rgb = red green blue */
+/* value range 0 se 255 */
+
+h4{
+color:rgb(255,0,0);
+}
+
+/* rgba color */
+/* a ka matlab alpha yani transparency */
+
+h5{
+color:rgba(255,0,0,0.5);
+}
+
+/* css units notes */
+
+/* px unit */
+
+/* px ka matlab pixel hota hai */
+/* ye fixed unit hoti hai */
+/* iski value har screen par same rehti hai */
+
+h1{
+font-size:30px;
+}
+
+/* percentage % */
+
+/* ye relative unit hoti hai */
+/* ye parent element ke size ke according change hoti hai */
+
+.parent{
+width:400px;
+}
+
+.child{
+width:50%;
+}
+
+/* em unit */
+
+/* em parent ke font-size ke according calculate hoti hai */
+
+body{
+font-size:20px;
+}
+
+p{
+font-size:2em;
+}
+
+/* rem unit */
+
+/* rem ka matlab root em hota hai */
+/* ye html (root element) ke font-size par depend karti hai */
+
+html{
+font-size:16px;
+}
+
+h1{
+font-size:2rem;
+}
+
+/* vw unit */
+
+/* vw ka matlab viewport width */
+/* 1vw = screen width ka 1% */
+
+.hero{
+width:50vw;
+}
+
+/* vh unit */
+
+/* vh ka matlab viewport height */
+/* 1vh = screen height ka 1% */
+
+.section{
+height:100vh;
+}
+
+/* css box model notes */
+
+/* css box model ke 4 parts hote hai */
+
+/*
+1 content
+2 padding
+3 border
+4 margin
+*/
+
+/* content */
+
+/* element ka actual data */
+/* jaise text image etc */
+
+div{
+width:200px;
+height:100px;
+}
+
+/* padding */
+
+/* content ke andar space dene ke liye */
+
+.box{
+padding:20px;
+}
+
+/* border */
+
+/* element ke around line banane ke liye */
+
+.box{
+border:2px solid black;
+}
+
+/* margin */
+
+/* element ke bahar space dene ke liye */
+
+.box{
+margin:30px;
+}
+/* border property */
+
+/* border me 3 cheeze hoti hai */
+
+/*
+1 border width
+2 border style
+3 border color
+*/
+
+.box{
+border:2px solid black;
+}
+
+/* border styles examples */
+
+.box1{
+border:2px dotted red;
+}
+
+.box2{
+border:3px dashed blue;
+}
+
+.box3{
+border:4px solid black;
+}
+
+/* box-sizing */
+/* box-sizing use karne se padding aur border width ke andar hi count hote hai */
+
+.box{
+width:200px;
+padding:20px;
+border:5px solid black;
+box-sizing:border-box;
+}
+
+/* display none */
+
+/* display none se element completely hide ho jata hai */
+/* element layout me space bhi nahi leta */
+
+.box{
+display:none;
+}
+
+/* visibility hidden */
+
+/* element hide ho jata hai lekin space rahti hai */
+
+.box{
+visibility:hidden;
+}

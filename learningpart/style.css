@@ -1,4 +1,4 @@
-/* Reset default browser spacing */
+
 *{
     margin:0;
     padding:0;
@@ -18,8 +18,8 @@ body{
     padding:18px;
     border-bottom:1px solid #ddd;
 
-    max-width: 1200px;
-    margin: auto;
+    /* max-width: 1200px; */
+    /* margin: auto; */
 }
 
 
@@ -48,6 +48,9 @@ body{
     margin-left:15px;
     cursor:pointer;
 } 
+.menuicon{
+    display: none;
+}
 
 
 /* page header */
@@ -135,10 +138,7 @@ body{
     border-radius:10px;
 }
 
-/* .category-card h3{
-    margin-top:10px;
-    font-size:18px;
-} */
+ 
 
 
 
@@ -149,7 +149,7 @@ body{
 }
 
 .section-title{
-    text-align:center;
+    /* text-align:center; */
     font-size:32px;
     margin-bottom:40px;
 }
@@ -161,7 +161,7 @@ body{
 }
 
 .product-card{
-    background:white;
+    /* background:white; */
     border-radius:10px;
     padding:10px;
     text-align:center;
@@ -319,3 +319,104 @@ margin-bottom: 10px;
   text-align: center;
   font-size:10px
 }
+
+.footer-part a{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgba(157, 137, 76, 0.653);
+    border-radius: 10px;
+    /* display: flex;
+    justify-content: end; */
+    margin-left: 180px;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+
+/* tablet viewport */
+@media(max-width:900px){
+    .nav-links{
+        display: none;
+    }
+
+    .hero{
+        height: 500px;
+        padding-left: 20px;
+    }
+    .products-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .summer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .summer-image img{
+        width: 400px;
+    }
+}
+
+/* mobile view port */
+@media(max-width:770px){
+  
+
+    .menuicon{
+        display: block;
+    }
+    .icons{
+        display: none;
+    }
+
+    .hero{
+        height: 450px;
+        padding: 20px;
+        text-align: center;
+       
+    }
+    .hero-buttons{
+         display: flex;
+        flex-direction: column;
+        gap: 10px;
+               
+    }
+
+    .products-container{
+        grid-template-columns:1fr;
+    }
+
+    .summer{
+        flex-direction: column;
+        gap: 25px;
+     }
+    .summer-image img{
+        width: 100%;
+       
+        border-radius: 10px;
+
+    }
+    .section-title{
+        text-align: center;
+    }
+
+    .why{
+        padding: 40px 20px;
+        align-content: center;
+    }
+    .why-container{
+        justify-content: center;
+    }
+
+    .footer{
+        padding: 40px 20px;
+    }
+    .footer-container-boxes{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .footer-part a{
+        margin-left:0px ;
+    }
+}
+
