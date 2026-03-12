@@ -17,6 +17,9 @@ body{
     align-items:center;
     padding:18px;
     border-bottom:1px solid #ddd;
+    background: #fff;
+    position: sticky;
+    top: 0%;
 
     /* max-width: 1200px; */
     /* margin: auto; */

@@ -22,3 +22,11 @@ today 11/03/2026
 Today I worked on the HTML & CSS layout I made yesterday and made it responsive.
 Also revised a few CSS properties.
 </pre>
+
+
+<pre>
+Today 12/03/2026
+
+Today Amit sir gave me an HTML and CSS layout that is connected with the previous layout. Today I worked on it and studied the CSS position property
+
+</pre>

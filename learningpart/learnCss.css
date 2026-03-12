@@ -285,3 +285,195 @@ display:none;
 .box{
 visibility:hidden;
 }
+
+ /*position property  */
+
+/* Sticky Header */
+/* Scroll hone par header top par chipak jayega */
+.sticky-header{
+  background:black;
+  color:white;
+  padding:15px;
+  position:sticky; /* element scroll hone par sticky ban jata hai */
+  top:0; /* top se 0px par chipak jayega */
+}
+
+
+/* Static Position */
+/* Ye default position hoti hai, element normal flow me rehta hai */
+.static-box{
+  width:150px;
+  height:100px;
+  background:orange;
+  margin:20px;
+  position:static; /* default position */
+}
+
+
+/* Relative Position */
+/* Element apni original position se move karta hai */
+.relative-box{
+  width:150px;
+  height:100px;
+  background:skyblue;
+  margin:20px;
+
+  position:relative; /* element apni jagah ke according move karega */
+  left:40px; /* element 40px right move karega */
+  top:20px; /* element 20px niche move karega */
+}
+
+
+/* Parent Container */
+/* Absolute element ko control karne ke liye parent relative hota hai */
+.parent{
+  width:300px;
+  height:200px;
+  background:#ddd;
+  margin:20px;
+
+  position:relative; /* child absolute iske according position lega */
+}
+
+
+/* Absolute Position */
+/* Element normal flow se bahar aa jata hai aur parent ke according move karta hai */
+.absolute-box{
+  width:100px;
+  height:80px;
+  background:red;
+  color:white;
+
+  position:absolute; /* parent ke respect me position lega */
+  top:10px; /* parent ke top se 10px niche */
+  right:10px; /* parent ke right se 10px left */
+}
+
+
+/* Fixed Button */
+/* Element screen ke respect me fix ho jata hai */
+.fixed-btn{
+  position:fixed; /* screen par fix rahega */
+  bottom:20px; /* screen ke bottom se 20px upar */
+  right:20px; /* screen ke right se 20px left */
+
+  padding:10px 20px;
+  background:green;
+  color:white;
+  border:none;
+}
+
+
+/* ============================= */
+/* CSS FLEXBOX NOTES */
+/* ============================= */
+
+
+/* 1️⃣ display:flex */
+/* Parent element ko flex container banata hai */
+/* Iske baad saare children flex items ban jate hain */
+
+.container{
+  display:flex;
+}
+
+
+/* 2️⃣ flex-direction */
+/* Items kis direction me arrange honge */
+
+.container{
+  flex-direction:row; 
+  /* row → left to right (default) */
+
+  /* column → top to bottom */
+  /* row-reverse → right to left */
+  /* column-reverse → bottom to top */
+}
+
+
+/* 3️⃣ justify-content */
+/* Main axis par alignment control karta hai */
+
+.container{
+  justify-content:center; 
+  /* items horizontal center me aayenge */
+
+  /* flex-start → start me */
+  /* flex-end → end me */
+  /* space-between → equal space */
+  /* space-around → items ke around space */
+}
+
+
+/* 4️⃣ align-items */
+/* Cross axis (usually vertical) par alignment control karta hai */
+
+.container{
+  align-items:center; 
+  /* items vertical center me aayenge */
+
+  /* flex-start → top */
+  /* flex-end → bottom */
+  /* stretch → full height */
+}
+
+
+/* 5️⃣ gap */
+/* Flex items ke beech space dene ke liye */
+
+.container{
+  gap:20px; 
+  /* items ke beech 20px space */
+}
+
+
+/* 6️⃣ flex-wrap */
+/* Items ek line me fit na ho to next line me chale jayenge */
+
+.container{
+  flex-wrap:wrap;
+}
+
+
+/* 7️⃣ flex-grow */
+/* Extra space ko item kitna grow karke lega */
+
+.box{
+  flex-grow:1;
+  /* sab boxes equal space fill karenge */
+}
+
+
+/* 8️⃣ flex-shrink */
+/* Container chota hone par item shrink hoga ya nahi */
+
+.box{
+  flex-shrink:0;
+  /* box shrink nahi hoga */
+}
+
+
+/* 9️⃣ flex-basis */
+/* Item ka initial size set karta hai */
+
+.box{
+  flex-basis:200px;
+}
+
+
+/* 🔟 flex (shorthand) */
+/* flex-grow + flex-shrink + flex-basis ka shortcut */
+
+.box{
+  flex:1;
+}
+
+
+/* ⭐ Most Used Trick */
+/* Kisi bhi element ko perfect center karne ke liye */
+
+.container{
+  display:flex;
+  justify-content:center; /* horizontal center */
+  align-items:center;     /* vertical center */
+}

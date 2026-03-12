@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial , sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a{
+    text-decoration: none;
+    margin: 15px;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-links a:hover{
+        color:#888;
+}
+
+.icons span{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.menuicon{
+    display: none;
+}
+
+/* shop all project */
+.shop-header{
+    padding:40px 60px;
+    background:#f6f6f6;
+    border-bottom:1px solid #eee;
+}
+.shop-title h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #888;
+}
+.breadcrumb .home{
+    color: black;
+}
+
+/* show 12 product */
+
+.shop-products{
+    padding:30px 60px;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+}
+
+.top-bar p{
+    font-size:16px;
+    color:#555;
+}
+
+.top-bar select{
+    font-size:15px;
+    padding:8px 12px;
+    border:1px solid #ccc;
+    background:white;
+}
+
+/* filters + products */
+
+.shop-layout{
+    display: flex;
+    gap: 30px;
+    
+}
+
+/* filter */
+.filters{
+    padding:20px 15px;
+}
+
+.filter-category h4,
+.filter-price h4,
+.filter-size h4,
+.filter-color h4{
+    margin:10px 0;
+    font-size:16px;
+}
+
+.filter-category label{
+    display:block;
+    margin-bottom:8px;
+}
+
+.price{
+    display:flex;
+    justify-content:space-between;
+}
+
+.filter-size button{
+    padding:6px 12px;
+    margin:5px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    background:white;
+    cursor:pointer;
+}
+
+.filter-color span{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin:5px;
+    /* background-color: blueviolet; */
+    border: 1px solid black;
+}
+
+.clear-filter{
+    padding: 12px 70px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.filter-color .black{
+    background-color: black;
+}
+.filter-color .white{
+    background-color: white;
+    
+}
+.filter-color .gray{
+    background-color: gray;
+}
+.filter-color .yellow{
+    background-color: yellow;
+}
+.filter-color .blue{
+    background-color: blue;
+}
+.filter-color .cred{
+    background-color: red;
+}
+
+
+/* side part */
+/* for tablet view */
+ @media(max-width:900px){
+    .nav-links{
+        display: none;
+    }
+ }
+
+
+ /* for mobile screen */
+ @media(max-width:770px){
+    .icons{
+        display: none;
+    }
+
+    .menuicon{
+        display: block;
+    }
+    .shop-header{
+        padding: 25px 20px;
+    }
+    .shop-title h2{
+        font-size: 26px;
+    }
+
+    .top-bar p{
+        font-size: 14px;
+    }
+
+    .top-bar select{
+    font-size:12px;
+    padding:6px 10px;
+    }
+
+    .top-bar{
+        justify-content: space-between;
+    }
+   
+ }
