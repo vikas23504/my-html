@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Vikas Portfolio</title>
@@ -71,6 +71,70 @@
 <footer>
     <p>&copy; 2026 Vikas Singh</p>
 </footer>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Navbar Active Link</title>
+
+<style>
+
+/* Navbar style */
+body{
+font-family: Arial;
+}
+
+.navbar{
+display:flex;
+gap:20px;
+padding:20px;
+background:#f2f2f2;
+}
+
+.navbar a{
+text-decoration:none;
+color:black;
+font-size:18px;
+}
+
+/* Active link */
+.navbar a.active{
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+<a href="#" class="nav-link">Home</a>
+<a href="#" class="nav-link">Shop</a>
+<a href="#" class="nav-link">About</a>
+<a href="#" class="nav-link">Contact</a>
+</nav>
+
+<script>
+
+let links = document.querySelectorAll(".nav-link");
+
+links.forEach(link => {
+link.addEventListener("click", function(){
+
+// sab links se active remove
+links.forEach(l => l.classList.remove("active"));
+
+// clicked link ko active do
+this.classList.add("active");
+
+});
+});
+
+</script>
 
 </body>
 </html>
